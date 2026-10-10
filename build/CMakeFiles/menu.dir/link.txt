@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/menu.dir/link.d CMakeFiles/menu.dir/app/menu.cpp.o -o menu  liblabcore.a

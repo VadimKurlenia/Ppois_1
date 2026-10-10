@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/tests.dir/link.d CMakeFiles/tests.dir/tests/main_tests.cpp.o CMakeFiles/tests.dir/tests/tests_polynomial.cpp.o CMakeFiles/tests.dir/tests/tests_set.cpp.o -o tests  liblabcore.a -lUnitTest++

@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblabcore.a CMakeFiles/labcore.dir/src/Polynomial.cpp.o CMakeFiles/labcore.dir/src/Set.cpp.o
+/usr/bin/ranlib liblabcore.a

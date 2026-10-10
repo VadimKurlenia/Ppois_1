@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Polynomial and Set: Исходный файл include/Set.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Polynomial and Set
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('Set_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Set.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="Set_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">class </span><a class="code hl_class" href="classSet.html">Set</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classSetElement.html">   10</a></span><span class="keyword">class </span><a class="code hl_function" href="classSetElement.html#a36feba40b79fbec48ad9c99d1a1f842b">SetElement</a></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classSetElement.html#a71b3ee032f65eff35fae570ee9c47ba2">   13</a></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="classSetElement.html#a71b3ee032f65eff35fae570ee9c47ba2">Type</a></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classSetElement.html#a71b3ee032f65eff35fae570ee9c47ba2a7baa9395b756b815ce561078935cafeb">   15</a></span>        <a class="code hl_enumvalue" href="classSetElement.html#a71b3ee032f65eff35fae570ee9c47ba2a7baa9395b756b815ce561078935cafeb">ATOM</a>, <a class="code hl_enumvalue" href="classSetElement.html#a71b3ee032f65eff35fae570ee9c47ba2a956763dd1f14e97548bb5fce4b233b4b">SUBSET</a></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    };</div>
+</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classSetElement.html#ae8de54adb4dec87071d18ee6e2225dc2">   18</a></span>    <a class="code hl_enumeration" href="classSetElement.html#a71b3ee032f65eff35fae570ee9c47ba2">Type</a> <a class="code hl_variable" href="classSetElement.html#ae8de54adb4dec87071d18ee6e2225dc2">type</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classSetElement.html#aa7d4a70a297f02f4626cd5201f481f6e">   19</a></span>    std::string <a class="code hl_variable" href="classSetElement.html#aa7d4a70a297f02f4626cd5201f481f6e">atom</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classSetElement.html#a2bf11b2d0661c41924be63c127f91d38">   20</a></span>    std::shared_ptr&lt;Set&gt; <a class="code hl_variable" href="classSetElement.html#a2bf11b2d0661c41924be63c127f91d38">subset</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_function" href="classSetElement.html#a36feba40b79fbec48ad9c99d1a1f842b">SetElement</a>(<span class="keyword">const</span> std::string &amp;val);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_function" href="classSetElement.html#a36feba40b79fbec48ad9c99d1a1f842b">SetElement</a>(<span class="keyword">const</span> <a class="code hl_class" href="classSet.html">Set</a>&amp; s);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classSetElement.html#acd5d65007c723a7e156e0b8709bfaf0e">operator==</a>(<span class="keyword">const</span> <a class="code hl_function" href="classSetElement.html#a36feba40b79fbec48ad9c99d1a1f842b">SetElement</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classSetElement.html#a594a8d4e7a54f4702bca4bee5ce91985">operator!=</a>(<span class="keyword">const</span> <a class="code hl_function" href="classSetElement.html#a36feba40b79fbec48ad9c99d1a1f842b">SetElement</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classSetElement.html#a32d8b266132546cb5fe7bfc5a51e8c8d">operator&lt;</a>(<span class="keyword">const</span> <a class="code hl_function" href="classSetElement.html#a36feba40b79fbec48ad9c99d1a1f842b">SetElement</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
+</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="};">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classSet.html">   30</a></span><span class="keyword">class </span><a class="code hl_function" href="classSet.html#a1c5d4bec6a962eb5805cf9a7321e241d">Set</a></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classSet.html#a83b1f0cead896034048da68d14eab490">   33</a></span>    std::vector&lt;SetElement&gt; <a class="code hl_variable" href="classSet.html#a83b1f0cead896034048da68d14eab490">elements</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classSet.html#a1e35a4c9fa36e920b58803800c9a5361">removeDuplicates</a>();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classSet.html#a4a80c119c48bb8b10d7f791af35cdd44">sortElements</a>();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">static</span> std::string <a class="code hl_function" href="classSet.html#aae909a0022e515c3f5b5b9b71936bbdf">trim</a>(<span class="keyword">const</span> std::string &amp;str);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">static</span> <a class="code hl_function" href="classSet.html#a1c5d4bec6a962eb5805cf9a7321e241d">Set</a> <a class="code hl_function" href="classSet.html#aa7f2642aa344e9c055a5d90f7a12199b">parseString</a>(<span class="keyword">const</span> std::string &amp;str);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_function" href="classSet.html#a1c5d4bec6a962eb5805cf9a7321e241d">Set</a>();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_function" href="classSet.html#a1c5d4bec6a962eb5805cf9a7321e241d">Set</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* str);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_function" href="classSet.html#a1c5d4bec6a962eb5805cf9a7321e241d">Set</a>(<span class="keyword">const</span> std::string&amp; str);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_function" href="classSet.html#a1c5d4bec6a962eb5805cf9a7321e241d">Set</a>(<span class="keyword">const</span> <a class="code hl_function" href="classSet.html#a1c5d4bec6a962eb5805cf9a7321e241d">Set</a>&amp; other);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <a class="code hl_function" href="classSet.html#a1c5d4bec6a962eb5805cf9a7321e241d">Set</a>&amp; <a class="code hl_function" href="classSet.html#ab8dfb2461bb28a5d7c67c34df488508f">operator=</a>(<span class="keyword">const</span> <a class="code hl_function" href="classSet.html#a1c5d4bec6a962eb5805cf9a7321e241d">Set</a>&amp; other);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classSet.html#ac6da221746d5068a3434d04150be3dba">   47</a></span>    <a class="code hl_function" href="classSet.html#ac6da221746d5068a3434d04150be3dba">~Set</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classSet.html#a01e42383323bb02566556be5833bcc3e">add</a>(<span class="keyword">const</span> <a class="code hl_class" href="classSetElement.html">SetElement</a>&amp; elem);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="classSet.html#a36a4c1c561b277d173be19008436638c">size</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classSet.html#a5266d7594009b0eae236ce008614f7ae">empty</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classSet.html#a84c404faca958ceb200303648162b8f9">operator==</a>(<span class="keyword">const</span> <a class="code hl_function" href="classSet.html#a1c5d4bec6a962eb5805cf9a7321e241d">Set</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classSet.html#a042befd0edd17fcc2b3a25859ca44bbb">operator!=</a>(<span class="keyword">const</span> <a class="code hl_function" href="classSet.html#a1c5d4bec6a962eb5805cf9a7321e241d">Set</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">friend</span> std::ostream&amp; <a class="code hl_friend" href="classSet.html#a487684b0c170800e494958c73857cbe7">operator&lt;&lt;</a>(std::ostream&amp; os, <span class="keyword">const</span> <a class="code hl_function" href="classSet.html#a1c5d4bec6a962eb5805cf9a7321e241d">Set</a>&amp; set);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">friend</span> std::istream&amp; <a class="code hl_friend" href="classSet.html#a8773573942b1e875e128fa53e2186353">operator&gt;&gt;</a>(std::istream&amp; is, <a class="code hl_function" href="classSet.html#a1c5d4bec6a962eb5805cf9a7321e241d">Set</a>&amp; set);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>};</div>
+</div>
+<div class="ttc" id="aclassSetElement_html"><div class="ttname"><a href="classSetElement.html">SetElement</a></div><div class="ttdef"><b>Определения</b> <a href="#l00010">Set.h:11</a></div></div>
+<div class="ttc" id="aclassSetElement_html_a2bf11b2d0661c41924be63c127f91d38"><div class="ttname"><a href="classSetElement.html#a2bf11b2d0661c41924be63c127f91d38">SetElement::subset</a></div><div class="ttdeci">std::shared_ptr&lt; Set &gt; subset</div><div class="ttdef"><b>Определения</b> <a href="#l00020">Set.h:20</a></div></div>
+<div class="ttc" id="aclassSetElement_html_a32d8b266132546cb5fe7bfc5a51e8c8d"><div class="ttname"><a href="classSetElement.html#a32d8b266132546cb5fe7bfc5a51e8c8d">SetElement::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const SetElement &amp;other) const</div><div class="ttdef"><b>Определения</b> <a href="Set_8cpp_source.html#l00028">Set.cpp:28</a></div></div>
+<div class="ttc" id="aclassSetElement_html_a36feba40b79fbec48ad9c99d1a1f842b"><div class="ttname"><a href="classSetElement.html#a36feba40b79fbec48ad9c99d1a1f842b">SetElement::SetElement</a></div><div class="ttdeci">SetElement(const std::string &amp;val)</div><div class="ttdef"><b>Определения</b> <a href="Set_8cpp_source.html#l00005">Set.cpp:5</a></div></div>
+<div class="ttc" id="aclassSetElement_html_a594a8d4e7a54f4702bca4bee5ce91985"><div class="ttname"><a href="classSetElement.html#a594a8d4e7a54f4702bca4bee5ce91985">SetElement::operator!=</a></div><div class="ttdeci">bool operator!=(const SetElement &amp;other) const</div><div class="ttdef"><b>Определения</b> <a href="Set_8cpp_source.html#l00023">Set.cpp:23</a></div></div>
+<div class="ttc" id="aclassSetElement_html_a71b3ee032f65eff35fae570ee9c47ba2"><div class="ttname"><a href="classSetElement.html#a71b3ee032f65eff35fae570ee9c47ba2">SetElement::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Определения</b> <a href="#l00013">Set.h:14</a></div></div>
+<div class="ttc" id="aclassSetElement_html_a71b3ee032f65eff35fae570ee9c47ba2a7baa9395b756b815ce561078935cafeb"><div class="ttname"><a href="classSetElement.html#a71b3ee032f65eff35fae570ee9c47ba2a7baa9395b756b815ce561078935cafeb">SetElement::Type::ATOM</a></div><div class="ttdeci">@ ATOM</div><div class="ttdef"><b>Определения</b> <a href="#l00015">Set.h:15</a></div></div>
+<div class="ttc" id="aclassSetElement_html_a71b3ee032f65eff35fae570ee9c47ba2a956763dd1f14e97548bb5fce4b233b4b"><div class="ttname"><a href="classSetElement.html#a71b3ee032f65eff35fae570ee9c47ba2a956763dd1f14e97548bb5fce4b233b4b">SetElement::Type::SUBSET</a></div><div class="ttdeci">@ SUBSET</div><div class="ttdef"><b>Определения</b> <a href="#l00015">Set.h:15</a></div></div>
+<div class="ttc" id="aclassSetElement_html_aa7d4a70a297f02f4626cd5201f481f6e"><div class="ttname"><a href="classSetElement.html#aa7d4a70a297f02f4626cd5201f481f6e">SetElement::atom</a></div><div class="ttdeci">std::string atom</div><div class="ttdef"><b>Определения</b> <a href="#l00019">Set.h:19</a></div></div>
+<div class="ttc" id="aclassSetElement_html_acd5d65007c723a7e156e0b8709bfaf0e"><div class="ttname"><a href="classSetElement.html#acd5d65007c723a7e156e0b8709bfaf0e">SetElement::operator==</a></div><div class="ttdeci">bool operator==(const SetElement &amp;other) const</div><div class="ttdef"><b>Определения</b> <a href="Set_8cpp_source.html#l00008">Set.cpp:8</a></div></div>
+<div class="ttc" id="aclassSetElement_html_ae8de54adb4dec87071d18ee6e2225dc2"><div class="ttname"><a href="classSetElement.html#ae8de54adb4dec87071d18ee6e2225dc2">SetElement::type</a></div><div class="ttdeci">Type type</div><div class="ttdef"><b>Определения</b> <a href="#l00018">Set.h:18</a></div></div>
+<div class="ttc" id="aclassSet_html"><div class="ttname"><a href="classSet.html">Set</a></div><div class="ttdef"><b>Определения</b> <a href="#l00030">Set.h:31</a></div></div>
+<div class="ttc" id="aclassSet_html_a01e42383323bb02566556be5833bcc3e"><div class="ttname"><a href="classSet.html#a01e42383323bb02566556be5833bcc3e">Set::add</a></div><div class="ttdeci">void add(const SetElement &amp;elem)</div><div class="ttdef"><b>Определения</b> <a href="Set_8cpp_source.html#l00166">Set.cpp:166</a></div></div>
+<div class="ttc" id="aclassSet_html_a042befd0edd17fcc2b3a25859ca44bbb"><div class="ttname"><a href="classSet.html#a042befd0edd17fcc2b3a25859ca44bbb">Set::operator!=</a></div><div class="ttdeci">bool operator!=(const Set &amp;other) const</div><div class="ttdef"><b>Определения</b> <a href="Set_8cpp_source.html#l00196">Set.cpp:196</a></div></div>
+<div class="ttc" id="aclassSet_html_a1c5d4bec6a962eb5805cf9a7321e241d"><div class="ttname"><a href="classSet.html#a1c5d4bec6a962eb5805cf9a7321e241d">Set::Set</a></div><div class="ttdeci">Set()</div><div class="ttdef"><b>Определения</b> <a href="Set_8cpp_source.html#l00142">Set.cpp:142</a></div></div>
+<div class="ttc" id="aclassSet_html_a1e35a4c9fa36e920b58803800c9a5361"><div class="ttname"><a href="classSet.html#a1e35a4c9fa36e920b58803800c9a5361">Set::removeDuplicates</a></div><div class="ttdeci">void removeDuplicates()</div><div class="ttdef"><b>Определения</b> <a href="Set_8cpp_source.html#l00064">Set.cpp:64</a></div></div>
+<div class="ttc" id="aclassSet_html_a36a4c1c561b277d173be19008436638c"><div class="ttname"><a href="classSet.html#a36a4c1c561b277d173be19008436638c">Set::size</a></div><div class="ttdeci">size_t size() const</div><div class="ttdef"><b>Определения</b> <a href="Set_8cpp_source.html#l00172">Set.cpp:172</a></div></div>
+<div class="ttc" id="aclassSet_html_a487684b0c170800e494958c73857cbe7"><div class="ttname"><a href="classSet.html#a487684b0c170800e494958c73857cbe7">Set::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const Set &amp;set)</div><div class="ttdef"><b>Определения</b> <a href="Set_8cpp_source.html#l00201">Set.cpp:201</a></div></div>
+<div class="ttc" id="aclassSet_html_a4a80c119c48bb8b10d7f791af35cdd44"><div class="ttname"><a href="classSet.html#a4a80c119c48bb8b10d7f791af35cdd44">Set::sortElements</a></div><div class="ttdeci">void sortElements()</div><div class="ttdef"><b>Определения</b> <a href="Set_8cpp_source.html#l00059">Set.cpp:59</a></div></div>
+<div class="ttc" id="aclassSet_html_a5266d7594009b0eae236ce008614f7ae"><div class="ttname"><a href="classSet.html#a5266d7594009b0eae236ce008614f7ae">Set::empty</a></div><div class="ttdeci">bool empty() const</div><div class="ttdef"><b>Определения</b> <a href="Set_8cpp_source.html#l00177">Set.cpp:177</a></div></div>
+<div class="ttc" id="aclassSet_html_a83b1f0cead896034048da68d14eab490"><div class="ttname"><a href="classSet.html#a83b1f0cead896034048da68d14eab490">Set::elements</a></div><div class="ttdeci">std::vector&lt; SetElement &gt; elements</div><div class="ttdef"><b>Определения</b> <a href="#l00033">Set.h:33</a></div></div>
+<div class="ttc" id="aclassSet_html_a84c404faca958ceb200303648162b8f9"><div class="ttname"><a href="classSet.html#a84c404faca958ceb200303648162b8f9">Set::operator==</a></div><div class="ttdeci">bool operator==(const Set &amp;other) const</div><div class="ttdef"><b>Определения</b> <a href="Set_8cpp_source.html#l00182">Set.cpp:182</a></div></div>
+<div class="ttc" id="aclassSet_html_a8773573942b1e875e128fa53e2186353"><div class="ttname"><a href="classSet.html#a8773573942b1e875e128fa53e2186353">Set::operator&gt;&gt;</a></div><div class="ttdeci">friend std::istream &amp; operator&gt;&gt;(std::istream &amp;is, Set &amp;set)</div><div class="ttdef"><b>Определения</b> <a href="Set_8cpp_source.html#l00226">Set.cpp:226</a></div></div>
+<div class="ttc" id="aclassSet_html_aa7f2642aa344e9c055a5d90f7a12199b"><div class="ttname"><a href="classSet.html#aa7f2642aa344e9c055a5d90f7a12199b">Set::parseString</a></div><div class="ttdeci">static Set parseString(const std::string &amp;str)</div><div class="ttdef"><b>Определения</b> <a href="Set_8cpp_source.html#l00071">Set.cpp:71</a></div></div>
+<div class="ttc" id="aclassSet_html_aae909a0022e515c3f5b5b9b71936bbdf"><div class="ttname"><a href="classSet.html#aae909a0022e515c3f5b5b9b71936bbdf">Set::trim</a></div><div class="ttdeci">static std::string trim(const std::string &amp;str)</div><div class="ttdef"><b>Определения</b> <a href="Set_8cpp_source.html#l00048">Set.cpp:48</a></div></div>
+<div class="ttc" id="aclassSet_html_ab8dfb2461bb28a5d7c67c34df488508f"><div class="ttname"><a href="classSet.html#ab8dfb2461bb28a5d7c67c34df488508f">Set::operator=</a></div><div class="ttdeci">Set &amp; operator=(const Set &amp;other)</div><div class="ttdef"><b>Определения</b> <a href="Set_8cpp_source.html#l00156">Set.cpp:156</a></div></div>
+<div class="ttc" id="aclassSet_html_ac6da221746d5068a3434d04150be3dba"><div class="ttname"><a href="classSet.html#ac6da221746d5068a3434d04150be3dba">Set::~Set</a></div><div class="ttdeci">~Set()=default</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a href="Set_8h.html">Set.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

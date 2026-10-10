@@ -1,0 +1,5 @@
+/home/vadim/Desktop/ppois_1/build/CMakeFiles/labcore.dir
+/home/vadim/Desktop/ppois_1/build/CMakeFiles/menu.dir
+/home/vadim/Desktop/ppois_1/build/CMakeFiles/tests.dir
+/home/vadim/Desktop/ppois_1/build/CMakeFiles/edit_cache.dir
+/home/vadim/Desktop/ppois_1/build/CMakeFiles/rebuild_cache.dir
